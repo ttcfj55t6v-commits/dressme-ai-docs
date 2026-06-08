@@ -544,8 +544,8 @@ def webhook():
         return "ok", 200
 
     if command == "/balance":
-        send_message(chat_id, get_balance_text(chat_id))
-        return "ok", 200
+    send_message(chat_id, "ТЕСТ BALANCE РАБОТАЕТ")
+    return "ok", 200
 
     if command == "/docs":
         send_message(chat_id, f"Документы DressMe AI:\n{DOCS_URL}")
