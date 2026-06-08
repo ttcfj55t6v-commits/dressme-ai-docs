@@ -1,0 +1,17 @@
+:root { --bg: #fbf7f4; --text: #241f21; --muted: #6b5d63; --card: #ffffff; --accent: #9b5f72; --line: #eadde2; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 900px; margin: 0 auto; padding: 32px 20px; }
+.hero { padding: 44px 28px; border-radius: 24px; background: linear-gradient(135deg, #fff, #f3e5ea); margin-bottom: 22px; }
+h1 { margin-top: 0; font-size: 36px; line-height: 1.15; }
+h2 { margin-top: 34px; font-size: 24px; }
+h3 { margin-top: 24px; font-size: 19px; }
+a { color: var(--accent); }
+.button { display: inline-block; background: var(--accent); color: white; padding: 12px 18px; border-radius: 999px; text-decoration: none; margin-top: 10px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 24px; margin: 18px 0; }
+.links { padding-left: 20px; }
+.links li { margin: 10px 0; }
+.doc { background: var(--card); margin-top: 24px; margin-bottom: 24px; border-radius: 22px; border: 1px solid var(--line); }
+p { color: var(--muted); }
+.doc p { color: var(--text); }
+@media (max-width: 600px) { h1 { font-size: 30px; } .container { padding: 18px 12px; } .hero, .card, .doc { border-radius: 16px; padding: 18px; } }
